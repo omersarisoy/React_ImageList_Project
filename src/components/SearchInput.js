@@ -12,7 +12,6 @@ class SearchInput extends React.Component{
 
     }
 
-    
     render(){
         return(
             <div className="ui segment ">

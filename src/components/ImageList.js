@@ -1,15 +1,16 @@
 import React from "react";
 
-const ImageList = (props) => {
+const ImageList = ({images}) => {
+    console.log(images)
 
-    const images = props.images.map((image) => {
-        return <img key={image.id} src={image.webformatURL} alt="">
+    const picture = images.map((item) => {
+        return <img key={item.id} src={item.webformatURL} alt="">
         </img>
     })
 
     return (
         <div>
-            {images}
+            {picture}
         </div>
     )
 }

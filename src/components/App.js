@@ -11,7 +11,6 @@ class App extends React.Component{
     const response =  await axios.get(`https://pixabay.com/api/?key=23065619-b621daa97aa60efca3adec631&q=${entry}&image_type=photo&pretty=true`)
 
     this.setState({images: response.data.hits})
-  
   }
 
   render(){
